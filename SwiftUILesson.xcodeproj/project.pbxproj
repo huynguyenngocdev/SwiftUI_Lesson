@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844098D22A4EDEDF00E02543 /* ChildContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844098D12A4EDEDF00E02543 /* ChildContentView.swift */; };
+		84C69DBA2A4C51C70097048C /* BasicLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DB92A4C51C70097048C /* BasicLayoutView.swift */; };
+		84C69DC12A4C52040097048C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DBC2A4C52040097048C /* ItemView.swift */; };
+		84C69DC22A4C52040097048C /* DemoZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DBD2A4C52040097048C /* DemoZStack.swift */; };
+		84C69DC32A4C52040097048C /* MonstarlabLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DBE2A4C52040097048C /* MonstarlabLogoView.swift */; };
+		84C69DC42A4C52040097048C /* DemoHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DBF2A4C52040097048C /* DemoHStack.swift */; };
+		84C69DC52A4C52040097048C /* DemoVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DC02A4C52040097048C /* DemoVStack.swift */; };
+		84C69DC72A4C52B80097048C /* DemoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DC62A4C52B80097048C /* DemoGridView.swift */; };
+		84C69DCA2A4C59860097048C /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C69DC92A4C59860097048C /* AppViewModel.swift */; };
 		84F880ED2A49345300B4BC4B /* SwiftUILessonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F880EC2A49345300B4BC4B /* SwiftUILessonApp.swift */; };
 		84F880EF2A49345300B4BC4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F880EE2A49345300B4BC4B /* ContentView.swift */; };
 		84F880F12A49345400B4BC4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F880F02A49345400B4BC4B /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		844098D12A4EDEDF00E02543 /* ChildContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContentView.swift; sourceTree = "<group>"; };
+		84C69DB92A4C51C70097048C /* BasicLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicLayoutView.swift; sourceTree = "<group>"; };
+		84C69DBC2A4C52040097048C /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		84C69DBD2A4C52040097048C /* DemoZStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoZStack.swift; sourceTree = "<group>"; };
+		84C69DBE2A4C52040097048C /* MonstarlabLogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonstarlabLogoView.swift; sourceTree = "<group>"; };
+		84C69DBF2A4C52040097048C /* DemoHStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoHStack.swift; sourceTree = "<group>"; };
+		84C69DC02A4C52040097048C /* DemoVStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoVStack.swift; sourceTree = "<group>"; };
+		84C69DC62A4C52B80097048C /* DemoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGridView.swift; sourceTree = "<group>"; };
+		84C69DC92A4C59860097048C /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		84F880E92A49345300B4BC4B /* SwiftUILesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F880EC2A49345300B4BC4B /* SwiftUILessonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILessonApp.swift; sourceTree = "<group>"; };
 		84F880EE2A49345300B4BC4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +50,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84C69DBB2A4C52040097048C /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				84C69DBC2A4C52040097048C /* ItemView.swift */,
+				84C69DBD2A4C52040097048C /* DemoZStack.swift */,
+				84C69DBE2A4C52040097048C /* MonstarlabLogoView.swift */,
+				84C69DBF2A4C52040097048C /* DemoHStack.swift */,
+				84C69DC02A4C52040097048C /* DemoVStack.swift */,
+				84C69DC62A4C52B80097048C /* DemoGridView.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		84C69DC82A4C59760097048C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84C69DC92A4C59860097048C /* AppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		84F880E02A49345300B4BC4B = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +90,11 @@
 		84F880EB2A49345300B4BC4B /* SwiftUILesson */ = {
 			isa = PBXGroup;
 			children = (
+				84C69DC82A4C59760097048C /* ViewModels */,
+				84C69DBB2A4C52040097048C /* Layouts */,
+				84C69DB92A4C51C70097048C /* BasicLayoutView.swift */,
 				84F880EC2A49345300B4BC4B /* SwiftUILessonApp.swift */,
+				844098D12A4EDEDF00E02543 /* ChildContentView.swift */,
 				84F880EE2A49345300B4BC4B /* ContentView.swift */,
 				84F880F02A49345400B4BC4B /* Assets.xcassets */,
 				84F880F22A49345400B4BC4B /* Preview Content */,
@@ -137,8 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C69DCA2A4C59860097048C /* AppViewModel.swift in Sources */,
+				84C69DC32A4C52040097048C /* MonstarlabLogoView.swift in Sources */,
+				84C69DBA2A4C51C70097048C /* BasicLayoutView.swift in Sources */,
+				84C69DC22A4C52040097048C /* DemoZStack.swift in Sources */,
+				844098D22A4EDEDF00E02543 /* ChildContentView.swift in Sources */,
 				84F880EF2A49345300B4BC4B /* ContentView.swift in Sources */,
+				84C69DC52A4C52040097048C /* DemoVStack.swift in Sources */,
 				84F880ED2A49345300B4BC4B /* SwiftUILessonApp.swift in Sources */,
+				84C69DC72A4C52B80097048C /* DemoGridView.swift in Sources */,
+				84C69DC42A4C52040097048C /* DemoHStack.swift in Sources */,
+				84C69DC12A4C52040097048C /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

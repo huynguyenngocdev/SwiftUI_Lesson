@@ -10,11 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @State private var counter = 0
     @State private var isActiveAnimation = false
+    @StateObject var viewModel = AppViewModel()
     
     var body: some View {
         VStack {
             HStack {
-                Text("Hi")
+                VStack {
+                    Text("Hi")
+                }
+                .background(.red)
+                .frame(width: 200, height: 100)
+                
+                ChildContentView()
                 Image(systemName: "hand.wave")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
@@ -24,18 +31,32 @@ struct ContentView: View {
                     .animation(.easeInOut.repeatForever(autoreverses: true),
                                value: isActiveAnimation)
             }
-            Text("This is a simple counter!")
+            .environmentObject(viewModel)
+            Text("This is a simple counter! \(counter)")
             Stepper {
-                Text("Value: \(counter)")
+                Text("Value: \(viewModel.counter)")
             } onIncrement: {
                 incrementStep()
             } onDecrement: {
                 decrementStep()
             }
-            .padding(5)
-            Button("Reset", action: {reset()})
-                .buttonStyle(.borderedProminent)
+            .padding(5.0)
+            Button("Reset", action: {
+                reset() {
+                    viewModel.counter = $0
+                }
+                
+            })
+            .buttonStyle(.borderedProminent)
         }
+        .onReceive(viewModel.$counter, perform: { newValue in
+            //            counter = viewModel.counter
+            print("Upldate vm \(newValue)")
+        })
+        .onChange(of: counter, perform: {
+            print("Update self counter \($0)")
+            //            viewModel.counter = counter
+        })
         .padding()
         .onAppear {
             isActiveAnimation.toggle()
@@ -45,16 +66,18 @@ struct ContentView: View {
 
 extension ContentView {
     func incrementStep() {
+        //        viewModel.counter += 1
         counter += 1
     }
     
     
     func decrementStep() {
-        counter -= 1
+        viewModel.counter -= 1
     }
     
-    func reset() {
-        counter = 0
+    func reset(complete: @escaping (Int) -> ()) {
+        
+        complete(0)
     }
 }
 
